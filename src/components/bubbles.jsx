@@ -1,14 +1,12 @@
 import React from "react";
 import "./Bubbles.css";
 
-function Bubbles() {
-  return (
-    <div>
-      <div id="bubble 1" class="bubble">
-        p
-      </div>
-    </div>
-  );
+function Bubbles(props) {
+  console.log("props", props);
+  const styleObj = {
+    color: "red",
+  };
+  return <div style={styleObj}>{props.s}</div>;
 }
 
 export default Bubbles;
